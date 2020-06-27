@@ -1,17 +1,17 @@
 # Generate IP Cert
-
 This script generates a self-signed SSL certificate for an IP address.
+Adapted from https://github.com/antelle/generate-ip-cert to support Android/esp8266 https connection.
 
 ## Usage
 
 Replace 127.0.0.1 with the desired IP:
 
 ```sh
-curl -sS https://raw.githubusercontent.com/antelle/generate-ip-cert/master/generate-ip-cert.sh |
+curl -sS https://raw.githubusercontent.com/casualoak/generate-ip-cert/master/generate-ip-cert.sh |
     bash -s 127.0.0.1
 ```
 
-This will create two files: `cert.pem` and `key.pem`.
+This will create three files: `cert.pem`, `cert.crt` and `key.pem`.
 
 ## Motivation
 
@@ -25,8 +25,8 @@ Tested on macOS Catalina and Ubuntu.
 
 The process of generating a SAN certificate is described here:
 
-https://geekflare.com/san-ssl-certificate/  
-https://support.citrix.com/article/CTX135602  
+https://geekflare.com/san-ssl-certificate/
+https://support.citrix.com/article/CTX135602
 
 ## License
 
